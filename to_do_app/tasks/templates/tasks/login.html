@@ -1,0 +1,10 @@
+{% extends 'tasks/base.html' %}
+
+{% block content %}
+    <h1 class="cosmic-heading">Login</h1>
+    <form method="POST" class="cosmic-form">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="cosmic-button">Login</button>
+    </form>
+{% endblock %}
